@@ -1,0 +1,22 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<style>
+    .footer {
+    background: #ffffff;
+    position: fixed;
+    left:0;
+    bottom:0;
+    width:100%;
+    height:100px;
+}
+</style>
+<h2 align="center">Contato da Equipe no GitHub</h2>
+<div align="center">
+    <a href="https://github.com/Tclsantos09/Projeto3" target="_blank">Repositório do Projeto</a> &ensp;
+    <a href="https://github.com/Baden286" target="_blank">Baden Damasio</a> &ensp;
+    <a href="" target="_blank">Diogo Rodrigues</a>  &ensp;
+    <a href="" target="_blank">Jefferson Rodrigues</a>  &ensp;
+    <a href="https://github.com/Tclsantos09" target="_blank">Thais do Carmo Lopes dos Santos</a>  &ensp;
+    <a href="https://github.com/weslleyantonio" target="_blank">Weslley Antonio</a>  &ensp;
+</div>
+<hr/>
