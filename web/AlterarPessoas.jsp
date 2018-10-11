@@ -22,7 +22,7 @@
                alt.setTelefone(request.getParameter("telefone"));
                
                BD.getPessoa().set(i, alt);
-               response.sendRedirect("cadastroPessoas.jsp");
+               response.sendRedirect("CadastroPessoas.jsp");
 
                }
                 
