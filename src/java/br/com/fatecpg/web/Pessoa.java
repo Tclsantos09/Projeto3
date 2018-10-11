@@ -1,27 +1,11 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package br.com.fatecpg.web;
 
-/**
- *
- * @author thais.lopes
- */
 public class Pessoa {
     private String nome;
     private String cpf;
     private String email;
     private String telefone;
-    
-    public void setPessoa(String nome, String cpf, String email, String telefone){
-    this.setNome(nome);
-    this.setCpf(cpf);
-    this.setEmail(email);   
-    this.setTelefone(telefone);
-    }
-    
+
     public String getNome() {
         return nome;
     }
@@ -54,5 +38,5 @@ public class Pessoa {
         this.telefone = telefone;
     }
     
+    
 }
-
