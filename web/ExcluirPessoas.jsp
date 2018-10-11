@@ -1,6 +1,6 @@
 
 <%@page import="br.com.fatecpg.web.BD"%>
-<%@page import="br.com.fatecpg.web.Pessoas"%>
+<%@page import="br.com.fatecpg.web.Pessoa"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -17,7 +17,7 @@
                 if (request.getParameter("excluir")!=null){
                 //try{
                 BD.getPessoa().remove(i);
-                response.sendRedirect("cadastroPessoas.jsp");
+                response.sendRedirect("CadastroPessoas.jsp");
 
                 //}catch (IndexOutOfBoundsException erro) {
                 // response.sendRedirect("cadastroPessoas.jsp");
@@ -34,7 +34,7 @@
                     Email: <br><input  type="text" name="email" value="<%= BD.getPessoa().get(i).getEmail()%>">  <br>
                     Telefone: <br><input  type="text" name="telefone" value="<%= BD.getPessoa().get(i).getTelefone()%>">  <br><br>
                     <button name="excluir">Excluir</button>
-                    <button><a href="cadastroPessoas.jsp">Não Excluir</a></button>
+                    <button><a href="CadastroPessoas.jsp">Não Excluir</a></button>
 
                 </form>
                 
