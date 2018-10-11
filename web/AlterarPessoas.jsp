@@ -5,6 +5,8 @@
 <!DOCTYPE html>
 <html>
     <head>
+                <%@include file="WEB-INF/jspf/menu.jspf" %>
+
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Confirmar Exclusão</title>
     </head>
@@ -43,4 +45,6 @@
                     
                       
     </body>
+                <%@include file="WEB-INF/jspf/footer.jspf" %>
+
 </html>
