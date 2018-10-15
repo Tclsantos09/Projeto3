@@ -10,7 +10,8 @@
     height:100px;
 }
 </style>
-<h2 align="center">Contato da Equipe no GitHub</h2>
+<h2 align="center">Contato da Equipe no GitHub <img src="imagem/github.png" height="25" width="25"></h2>
+
 <div align="center">
     <a href="https://github.com/Tclsantos09/Projeto3" target="_blank">Repositório do Projeto</a> &ensp;
     <a href="https://github.com/Baden286" target="_blank">Baden Damasio</a> &ensp;
