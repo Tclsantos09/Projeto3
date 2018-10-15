@@ -1,6 +1,6 @@
 <%-- 
-    Document   : lista
-    Created on : 11/10/2018, 14:14:12
+    Document   : Home
+    Created on : 11/10/2018, 14:12:56
     Author     : thais.lopes
 --%>
 
@@ -9,7 +9,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Lista</title>
+        <title>Home</title>
         <style>
             body{
                 padding-bottom:100px;
@@ -18,11 +18,13 @@
     </head>
     <body>
         <%@include file="WEB-INF/jspf/menu.jspf" %>
-        <h1>Lista</h1><br>
-        <a href="incluir.jsp"><button>Incluir</button></a> <br>
-        
-        <a href="excluir.jsp"><button>Excluir</button></a> <br>
-        <a href="alterar.jsp"><button>Alterar</button></a> <br>
+        <div align="center">
+            <h3>Home</h3>
+            <h3> Cadastro </h3>
+            <p> Projeto elaborado para cadastro de Pessoas, Empresas e Veiculos.</p>
+            <h3>Equipe de desenvolvimento</h3>
+            <h4>Baden Damasio</h4><h4>Diogo Rodrigues</h4><h4>Jefferson Rodrigues</h4><h4>Thaís Lopes</h4><h4>Weslley Antonio</h4>
+        </div>
     </body>
     <div class="footer">
         <%@include file="WEB-INF/jspf/footer.jspf" %>
