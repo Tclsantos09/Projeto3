@@ -19,6 +19,8 @@
     <body>
         <%@include file="WEB-INF/jspf/menu.jspf" %>
         <h2>Cadastrar Veiculos</h2>
+        <input type="submit" name="inserir" value="inserir"/>
+        
         
     </body>
     <div class="footer">

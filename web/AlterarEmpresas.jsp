@@ -1,6 +1,6 @@
 <%-- 
-    Document   : CadastroEmpresas
-    Created on : 11/10/2018, 14:19:56
+    Document   : AlterarEmpresa
+    Created on : 15/10/2018, 11:50:27
     Author     : thais.lopes
 --%>
 
@@ -9,21 +9,16 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Cad Empresas</title>
-        <style>
-            body{
-                padding-bottom:100px;
-            }
-        </style>
+        <title>Confirmar Alteração</title>
     </head>
     <body>
         <%@include file="WEB-INF/jspf/menu.jspf" %>
-        <h2>Cadastrar Empresas</h2>
-        <input type="submit" name="inserir" value="inserir"/>
-        
-        
+        <h2>Confirmar Alteração</h2>
     </body>
     <div class="footer">
         <%@include file="WEB-INF/jspf/footer.jspf" %>
     </div>
 </html>
+
+
+      
