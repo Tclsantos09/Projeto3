@@ -8,10 +8,10 @@
                 <%@include file="WEB-INF/jspf/menu.jspf" %>
 
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Confirmar Exclusão</title>
+        <title>Confirmar Alteração</title>
     </head>
     <body>
-                <h2>Confirmar Exclusão</h2>
+                <h2>Confirmar Alteração</h2>
                 
                 <%
                 
@@ -45,6 +45,7 @@
                     
                       
     </body>
-                <%@include file="WEB-INF/jspf/footer.jspf" %>
-
+    <div class="footer">
+        <%@include file="WEB-INF/jspf/footer.jspf" %>
+    </div>
 </html>

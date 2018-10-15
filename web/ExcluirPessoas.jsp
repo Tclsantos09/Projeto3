@@ -43,6 +43,7 @@
                     
                       
     </body>
-                <%@include file="WEB-INF/jspf/footer.jspf" %>
-
+    <div class="footer">
+        <%@include file="WEB-INF/jspf/footer.jspf" %>
+    </div>
 </html>

@@ -60,6 +60,7 @@
                     </table>
                       
     </body>
+    <div class="footer">
             <%@include file="WEB-INF/jspf/footer.jspf" %>
-
+    </div>
 </html>
