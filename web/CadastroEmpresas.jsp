@@ -18,11 +18,8 @@
     </head>
     <body>
         <%@include file="WEB-INF/jspf/menu.jspf" %>
-        <h1>Cadastro de Empresas</h1>
-        <a href="incluir.jsp"><button>Incluir</button></a> <br>
+        <h2>Cadastrar Empresas</h2>
         
-        <a href="excluir.jsp"><button>Excluir</button></a> <br>
-        <a href="alterar.jsp"><button>Alterar</button></a> <br>
     </body>
     <div class="footer">
         <%@include file="WEB-INF/jspf/footer.jspf" %>
