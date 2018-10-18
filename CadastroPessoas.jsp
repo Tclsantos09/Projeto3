@@ -37,8 +37,8 @@
                 %>
                 
                 <form >
-                    Nome:<br> <input  type="text" name="nome"/>  <br>
-                    CPF:<br> <input  type="text" name="cpf"/>  <br>
+                    Nome:<br> <input  type="text" name="nome" required="true"/>  <br>
+                    CPF:<br> <input  type="text" name="cpf" required="true"/>  <br>
                     Email: <br><input  type="text" name="email"/>  <br>
                     Telefone: <br><input  type="text" name="telefone"/>  <br><br>
                     <input type="submit" name="inserir" value="inserir"/>
