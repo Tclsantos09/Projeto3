@@ -38,10 +38,10 @@
         %>
                 
         <form >
-            Marca:<br> <input  type="text" name="marca"/>  <br>
-            Modelo:<br> <input  type="text" name="modelo"/>  <br>
-            Cor: <br><input  type="text" name="cor"/>  <br>
-            Placa: <br><input  type="text" name="placa"/>  <br><br>
+            Marca:<br> <input  type="text" name="marca" required="true"/>  <br>
+            Modelo:<br> <input  type="text" name="modelo" required="true"/>  <br>
+            Cor: <br><input  type="text" name="cor" required="true"/>  <br>
+            Placa: <br><input  type="text" name="placa" required="true"/>  <br><br>
             <input type="submit" name="inserir" value="inserir"/>
         </form><hr>
                 
