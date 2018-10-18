@@ -5,6 +5,8 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" href=../../../Bootstrap/css/bootstrap.css">
+
            <%@include file="WEB-INF/jspf/menu.jspf" %>
 
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -24,23 +26,29 @@
                 <h2>Cadastrar Pessoas</h2>
                 
                 <%
+                    try{
                 if (request.getParameter("inserir")!=null){
                    Pessoa ins = new Pessoa();
                    ins.setNome(request.getParameter("nome"));
+                   
+                   int cpf = Integer.parseInt(request.getParameter("cpf"));
                    ins.setCpf(request.getParameter("cpf"));
+                   
                    ins.setEmail(request.getParameter("email"));
+                   
+                   int telefone = Integer.parseInt(request.getParameter("telefone"));
                    ins.setTelefone(request.getParameter("telefone"));
+                   
                    BD.getPessoa().add(ins);
                    response.sendRedirect(request.getRequestURI());
-                }
-                
+                   }
                 %>
                 
                 <form >
                     Nome:<br> <input  type="text" name="nome"/>  <br>
-                    CPF:<br> <input  type="text" name="cpf"/>  <br>
+                    CPF:<br> <input type="text" name="cpf" placeholder="Somente números"/>  <br>
                     Email: <br><input  type="text" name="email"/>  <br>
-                    Telefone: <br><input  type="text" name="telefone"/>  <br><br>
+                    Telefone: <br><input  type="text" name="telefone" placeholder="Somente números"/>  <br><br>
                     <input type="submit" name="inserir" value="inserir"/>
                 </form><hr>
                 
@@ -68,7 +76,12 @@
                     </tr>
                         <%}%>
                     </table>
-                      
+                  <%}catch(Exception ex){%>
+                    <b>Valores incorretos! Tente Novamente.</b><br>
+                    <button><a href="CadastroPessoas.jsp">Voltar</a></button>
+        <%}%>  
+                    
+
     </body>
     <div class="footer">
             <%@include file="WEB-INF/jspf/footer.jspf" %>

@@ -5,6 +5,6 @@
     <a href="home.jsp">Home</a> &ensp;
     <a href="CadastroPessoas.jsp">Cadastro de Pessoas</a>  &ensp;
     <a href="CadastroEmpresas.jsp">Cadastro de Empresas</a>  &ensp;
-    <a href="CadastroVeiculos.jsp">Cadastro de Veiculos</a>
+    <a href="CadastroVeiculos.jsp">Cadastro de Veículos</a>
 </div>
 <hr/>
