@@ -9,7 +9,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Cad Empresas</title>
+        <title>Cadastrar Empresas</title>
         <style>
             body{
                 padding-bottom:100px;
