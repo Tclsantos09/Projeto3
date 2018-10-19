@@ -9,37 +9,40 @@
 
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Confirmar Exclusão</title>
+        <style>
+            body{
+                padding-bottom:100px;
+            }
+        </style>
     </head>
     <body>
-                <h2>Confirmar Exclusão</h2>
-                
-                <%
-                
-                    int i = Integer.parseInt(request.getParameter("id"));
-                    Pessoa p = BD.getPessoa().get(i);
-                    if (request.getParameter("excluir")!=null){
-                        //try{
-                        BD.getPessoa().remove(i);
-                        response.sendRedirect("CadastroPessoas.jsp");
+        <h2 align="center">Confirmar Exclusão</h2>
 
-                        //}catch (IndexOutOfBoundsException erro) {
-                        // response.sendRedirect("cadastroPessoas.jsp");
-                    }
+        <%
+            int i = Integer.parseInt(request.getParameter("id"));
+            Pessoa p = BD.getPessoa().get(i);
+            if (request.getParameter("excluir")!=null){
+                //try{
+                BD.getPessoa().remove(i);
+                response.sendRedirect("CadastroPessoas.jsp");
 
-                %>
+                //}catch (IndexOutOfBoundsException erro) {
+                // response.sendRedirect("cadastroPessoas.jsp");
+            }
+        %>
                 
-                <form id="<%=i%>">
-                    ID<br> <input  type="text" name="id" value="<%= i%>">  <br>
-                    <input  type="hidden" name="i" value="<%= i%>">
-                            
-                    Nome:<br> <%= p.getNome()%>  <br>
-                    CPF:<br> <%= p.getCpf()%> <br>
-                    Email: <br> <%= p.getEmail()%> <br>
-                    Telefone: <br> <%= p.getTelefone()%> <br><br>
-                    <button name="excluir">Excluir</button>
-                    <button><a href="CadastroPessoas.jsp">Não Excluir</a></button>
-                    
-                </form>
+        <form id="<%=i%>">
+            <div align="center">
+                ID<br> <input  type="text" name="id" value="<%= i%>">  <br>
+                <input  type="hidden" name="i" value="<%= i%>">
+                Nome:<br> <%= p.getNome()%>  <br>
+                CPF:<br> <%= p.getCpf()%> <br>
+                Email: <br> <%= p.getEmail()%> <br>
+                Telefone: <br> <%= p.getTelefone()%> <br><br>
+                <button name="excluir">Excluir</button>
+                <button><a href="CadastroPessoas.jsp">Voltar</a></button>
+            </div>
+        </form>
                       
     </body>
     <div class="footer">

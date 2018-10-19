@@ -20,7 +20,7 @@
          <%@include file="WEB-INF/jspf/menu.jspf" %>
          <div align="center">
             <h2> Cadastro </h2>
-            <p> Projeto elaborado para cadastro de Pessoas, Empresas e Veiculos.</p>
+            <p> Projeto elaborado para cadastro de Pessoas, Empresas e Veículos.</p>
             <h3>Equipe de desenvolvimento</h3>
             <h4>Baden Damasio</h4><h4>Diogo Rodrigues</h4><h4>Jefferson Rodrigues</h4><h4>Thaís Lopes</h4><h4>Weslley Antonio</h4>
         </div>
