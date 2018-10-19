@@ -9,29 +9,12 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Cad Empresas</title>
         
-        <style>
-            body{
-                padding-bottom:100px;
-            }
-            
-            
-
-            table,th, td {
-                    border-collapse: collapse;
-                    border: 1px solid black;
-                }
-                
-            th, td {
-                text-align: center;
-            }
-
-        </style>
-        
+               
     </head>
     
     <body>
         <%@include file="WEB-INF/jspf/menu.jspf" %>
-        <h2 align="center">Cadastrar Empresas</h2>
+        <h4 align="center">Cadastrar Empresas</h4>
         
         <%
             try{
