@@ -4,6 +4,8 @@
 <!DOCTYPE html>
 <html>
     <head>
+           <%@include file="WEB-INF/jspf/menu.jspf" %>
+
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Cad Empresas</title>
         
@@ -13,6 +15,7 @@
             }
             
             
+
             table,th, td {
                     border-collapse: collapse;
                     border: 1px solid black;
@@ -21,6 +24,7 @@
             th, td {
                 text-align: center;
             }
+
         </style>
         
     </head>
@@ -83,10 +87,12 @@
         <%}catch(Exception ex){%>
             <b>Valores incorretos! Tente Novamente.</b><br>
         <%}%>  
+
     </body>
     
     <div class="footer">
-        <%@include file="WEB-INF/jspf/footer.jspf" %>
+            <%@include file="WEB-INF/jspf/footer.jspf" %>
     </div>
-    
+
 </html>
+

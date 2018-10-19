@@ -1,9 +1,11 @@
 <%@page import="br.com.fatecpg.web.BD"%>
 <%@page import="br.com.fatecpg.web.Empresa"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE html>
+   <!DOCTYPE html>
 <html>
     <head>
+                <%@include file="WEB-INF/jspf/menu.jspf" %>
+
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Confirmar Alteração</title>
         <style>
@@ -17,6 +19,7 @@
         <h2 align="center">Confirmar Alteração</h2>
         
         <%
+
                int i = Integer.parseInt(request.getParameter("id"));
                if (request.getParameter("alterar")!=null){
                Empresa alt = new Empresa();
@@ -42,6 +45,7 @@
                 <button name="alterar">Alterar</button>
             </div>
         </form>  
+
     </body>
     <div class="footer">
         <%@include file="WEB-INF/jspf/footer.jspf" %>
