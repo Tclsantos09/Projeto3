@@ -1,8 +1,3 @@
-<%-- 
-    Document   : CadastroEmpresas
-    Created on : 11/10/2018, 14:19:56
-    Author     : thais.lopes
---%>
 <%@page import="br.com.fatecpg.web.BD"%>
 <%@page import="br.com.fatecpg.web.Empresa"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -43,7 +38,6 @@
                ins.setCnpj(request.getParameter("cnpj"));
                ins.setTelefone(request.getParameter("telefone"));
                ins.setWebsite(request.getParameter("website"));
-
                BD.getEmpresa().add(ins);
                response.sendRedirect(request.getRequestURI());
             }

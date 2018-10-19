@@ -1,8 +1,3 @@
-<%-- 
-    Document   : AlterarEmpresa
-    Created on : 15/10/2018, 11:50:27
-    Author     : thais.lopes
---%>
 <%@page import="br.com.fatecpg.web.BD"%>
 <%@page import="br.com.fatecpg.web.Empresa"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -51,7 +46,4 @@
     <div class="footer">
         <%@include file="WEB-INF/jspf/footer.jspf" %>
     </div>
-</html>
-
-
-      
+</html> 
