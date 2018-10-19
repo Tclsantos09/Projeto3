@@ -7,10 +7,15 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Confirmar Alteração</title>
+    <style>
+        body{
+                padding-bottom:100px;
+            }
+    </style>        
     </head>
     <body>
         <%@include file="WEB-INF/jspf/menu.jspf" %>
-        <h2>Confirmar Alteração</h2>
+        <h2 align="center">Confirmar Alteração</h2>
         
         <% 
             int i = Integer.parseInt(request.getParameter("id"));
@@ -28,16 +33,15 @@
         %>
         
         <form id="<%=i%>">
-                    ID<br> <input  type="text" name="id" value="<%= i%>">  <br>
-
-                    Cor:<br> <input  type="text" name="cor" value="<%= BD.getVeiculo().get(i).getCor()%>">  <br>
-                    Marca:<br> <input  type="text" name="marca" value="<%= BD.getVeiculo().get(i).getMarca()%>">  <br>
-                    Modelo: <br><input  type="text" name="modelo" value="<%= BD.getVeiculo().get(i).getModelo()%>">  <br>
-                    Placa: <br><input  type="text" name="placa" value="<%= BD.getVeiculo().get(i).getPlaca()%>">  <br><br>
-                    <button name="alterar">Alterar</button>
-
-                </form>
-        
+            <div align="center">
+                ID<br> <input type="text" name="id" value="<%= i%>"><br>
+                Cor:<br> <input type="text" name="cor" value="<%= BD.getVeiculo().get(i).getCor()%>"><br>
+                Marca:<br> <input type="text" name="marca" value="<%= BD.getVeiculo().get(i).getMarca()%>"><br>
+                Modelo: <br><input type="text" name="modelo" value="<%= BD.getVeiculo().get(i).getModelo()%>"><br>
+                Placa: <br><input type="text" name="placa" value="<%= BD.getVeiculo().get(i).getPlaca()%>"><br><br>
+                <button name="alterar">Alterar</button>
+            </div>
+        </form>
     </body>
     <div class="footer">
         <%@include file="WEB-INF/jspf/footer.jspf" %>

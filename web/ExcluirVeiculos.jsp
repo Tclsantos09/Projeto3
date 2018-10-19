@@ -7,10 +7,15 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Confirmar Exclusão</title>
+        <style>
+            body{
+                padding-bottom:100px;
+            }
+        </style>
     </head>
     <body>
         <%@include file="WEB-INF/jspf/menu.jspf" %>
-        <h2>Confirmar Exclusão</h2>
+        <h2 align="center">Confirmar Exclusão</h2>
         
         <%
         int i  = Integer.parseInt(request.getParameter("id"));
@@ -24,17 +29,17 @@
         %>
         
         <form id="<%=i%>">
-                    ID<br> <input  type="text" name="id" value="<%= i%>">  <br>
-                    <input  type="hidden" name="i" value="<%= i%>">
-                            
-                    Cor:<br> <%= ex.getCor()%>  <br>
-                    Marca:<br> <%= ex.getMarca()%> <br>
-                    Modelo: <br> <%= ex.getModelo()%> <br>
-                    Placa: <br> <%= ex.getPlaca()%> <br><br>
-                    <button name="excluir">Excluir</button>
-                    <button><a href="CadastroVeiculos.jsp">Não Excluir</a></button>
-                    
-                </form>
+            <div align="center">
+                ID<br> <input  type="text" name="id" value="<%= i%>">  <br>
+                <input  type="hidden" name="i" value="<%= i%>">
+                Cor:<br> <%= ex.getCor()%>  <br>
+                Marca:<br> <%= ex.getMarca()%> <br>
+                Modelo: <br> <%= ex.getModelo()%> <br>
+                Placa: <br> <%= ex.getPlaca()%> <br><br>
+                <button name="excluir">Excluir</button>
+                <button><a href="CadastroVeiculos.jsp">Voltar</a></button>
+            </div>
+        </form>
         
     </body>
     <div class="footer">
