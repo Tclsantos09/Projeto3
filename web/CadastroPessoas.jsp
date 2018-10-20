@@ -56,7 +56,7 @@
                 
                     <input class="btn btn-dark" type="submit" name="inserir" value="Inserir"/>
                 <a href="ListaPessoas.jsp" class="btn btn-outline-secondary" title="Voltar para a lista de contatos.">Lista</a>
-                </form>
+               <br><br> </form>
                 </div>
             
                 <div class="col-md-7">

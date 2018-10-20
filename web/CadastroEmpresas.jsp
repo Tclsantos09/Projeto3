@@ -68,10 +68,10 @@
                     <label for="website" class="font-weight-bold">WebSite</label>
                     <input type="text" id="website" name="website" class="form-control">
                 </div> 
-                <input class="btn btn-dark" type="submit" name="inserir" value="Inserir"/>
+                    <input class="btn btn-dark" type="submit" name="inserir" value="Inserir"/>
                 <a href="ListaEmpresas.jsp" class="btn btn-outline-secondary" title="Voltar para a lista de contatos.">Lista</a>
 
-                </form>
+               <br><br> </form>
             </div>
                 <div class="col-md-7">
                     <center>

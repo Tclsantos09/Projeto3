@@ -36,9 +36,9 @@
                     Telefone:<input  type="text" class="form-control" name="telefone" value="<%= BD.getPessoa().get(i).getTelefone()%>"><br>
                     <button name="excluir" class="btn btn-danger">Excluir</button>
                     <button name="voltar" class="btn" ><a href="ListaPessoas.jsp" >Voltar</a></button>
-                    
-                </form>
-        </div>         
+                            </div>         
+
+                </form></div>
     </body>
     
 </html>

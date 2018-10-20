@@ -1,23 +1,53 @@
-<%-- any content can be specified here e.g.: --%>
 <%@ page pageEncoding="UTF-8" %>
-<style>
-    .footer {
-    background: #ffffff;
-    position: fixed;
-    left:0;
-    bottom:0;
-    width:100%;
-    height:100px;
-}
-</style>
-<h2 align="center" id="rodape">Contato da Equipe no GitHub <img src="imagem/github.png" height="25" width="25"></h2>
+<!------ Include the above in your HEAD tag ---------->
 
-<div align="center">
-    <a href="https://github.com/Tclsantos09/Projeto3" target="_blank">Repositório do Projeto</a> &ensp;
-    <a href="https://github.com/Baden286" target="_blank">Baden Damasio</a> &ensp;
-    <a href="https://github.com/diogoa" target="_blank">Diogo Rodrigues</a>  &ensp;
-    <a href="https://github.com/Dev-Jeff" target="_blank">Jefferson Rodrigues</a>  &ensp;
-    <a href="https://github.com/Tclsantos09" target="_blank">Thais Lopes</a>  &ensp;
-    <a href="https://github.com/weslleyantonio" target="_blank">Weslley Antonio</a>  &ensp;
-</div>
-<hr/>
+<link rel="stylesheet" href="css/footer.css">
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">   
+    
+<footer style="background-color: #212529" ><br>
+    <h5 align="center" id="rodape" style="color: #b1aca1">Contato da Equipe no GitHub </h5>
+
+        <div class="footer-top"> 
+           <div class="container">
+               
+        <ul class="nav">
+            <li class="nav-item">
+    <a class="nav-link disabled" href="https://github.com/Tclsantos09/Projeto3"><i class="fa fa-github fa-2x"></i>Repositório do Projeto</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link disabled" href="https://github.com/baden286"><i class="fa fa-github fa-2x"></i>Baden Damasio</a>
+  </li>
+ <li class="nav-item">
+     <a class="nav-link disabled" href="https://github.com/diogoa"><i class="fa fa-github fa-2x"></i>Diogo Rodrigues</a>
+  </li>
+  <li class="nav-item">
+      <a class="nav-link disabled" href="https://github.com/Dev-Jeff"><i class="fa fa-github fa-2x"></i>Jefferson Rodrigues</a>
+  </li>
+  <li class="nav-item">
+      <a class="nav-link disabled" href="https://github.com/Tclsantos09"><i class="fa fa-github fa-2x"></i>Thaís Lopes</a>
+  </li>
+  <li class="nav-item">
+      <a class="nav-link disabled" href="https://github.com/weslleyantonio"><i class="fa fa-github fa-2x"></i>Weslley Antônio</a>
+  </li>
+        </ul><br>
+               
+           </div> 
+        </div>  
+        
+            </div>
+        </div>
+        
+    </footer>
+    
+    
+    <div class="copyright">
+     <div class="container">
+       
+         <div align="center">
+         	<p>Copyright © 2018 All rights reserved</p>
+         </div>
+         
+ 	   </div>
+    </div>
+    
