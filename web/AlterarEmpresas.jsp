@@ -32,18 +32,18 @@
                 
         <form id="<%=i%>">
             <div class="form-group col-md-5">
-                ID<input type="text" class="form-control" name="id" value="<%= i%>"><br>
+                ID<input type="text" class="form-control" name="id" value="<%= i%>">
                 Nome<input type="text" class="form-control" name="nome" value="<%= BD.getEmpresa().get(i).getNome()%>">
                 Razão Social<input type="text" class="form-control" name="razaoSocial" value="<%= BD.getEmpresa().get(i).getRazaoSocial()%>">
                 CNPJ<input type="text" class="form-control" name="cnpj" value="<%= BD.getEmpresa().get(i).getCnpj()%>">
                 Telefone<input type="text" class="form-control" name="telefone" value="<%= BD.getEmpresa().get(i).getTelefone()%>">
                 Website<input type="text" class="form-control" name="website" value="<%= BD.getEmpresa().get(i).getWebsite()%>"><br>
-                <button name="alterar" class="btn btn-primary">Alterar</button>
+                <button name="alterar" class="btn btn-primary" style="z-index:">Alterar</button>
+                <button name="voltar" class="btn" ><a href="ListaEmpresas.jsp" >Voltar</a></button>
+            
             </div>
         </form>  
         </div>
     </body>
-    <div class="footer">
-        <%@include file="WEB-INF/jspf/footer.jspf" %>
-    </div>
+    
 </html> 

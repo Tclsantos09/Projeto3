@@ -34,7 +34,7 @@
                         <tr>
                         <td><%=i%></td>
                         <td><%=BD.getPessoa().get(i).getNome()%></td>
-                         <td><%=BD.getPessoa().get(i).getCpf()%></td>
+                        <td><%=BD.getPessoa().get(i).getCpf()%></td>
 
                         <td><%=BD.getPessoa().get(i).getEmail()%></td>
                         <td><%=BD.getPessoa().get(i).getTelefone()%></td>

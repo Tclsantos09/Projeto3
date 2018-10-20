@@ -28,9 +28,10 @@
                 <th scope="col">Comandos</th>
             </tr>
                </thead>
-            <%for (int i = 0; i < BD.getEmpresa().size(); i++) {%>
-             <tbody class="table-striped ">     
-            <tr>
+                       
+              <%for (int i = 0; i < BD.getEmpresa().size(); i++) {%>
+              <tbody class="table-striped ">       
+                <tr>
                    <td><%=i%></td>
                    <td><%=BD.getEmpresa().get(i).getNome()%></td>
                    <td><%=BD.getEmpresa().get(i).getRazaoSocial()%></td>
