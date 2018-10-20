@@ -1,10 +1,26 @@
-<%-- any content can be specified here e.g.: --%>
-<h4 align="center">Menu</h4>
-<%@ page pageEncoding="UTF-8" %>
-<div align="center">
-    <a href="home.jsp">Home</a> &ensp;
-    <a href="CadastroPessoas.jsp">Cadastro de Pessoas</a>  &ensp;
-    <a href="CadastroEmpresas.jsp">Cadastro de Empresas</a>  &ensp;
-    <a href="CadastroVeiculos.jsp">Cadastro de VeÃ­culos</a>
-</div>
-<hr/>
+<div class="container">
+    <h3>Cadastro de Controle</h3>
+    
+<ul class="nav nav-pills nav-fill">
+  <li class="nav-item">
+    <a class="btn btn-dark" href="home.jsp">Home</a>
+  </li><div class="col-sm-1"></div>
+
+  <li class="nav-item">
+    <a class="btn btn-dark" href="CadastroPessoas.jsp">Cadastro de Pessoas</a>
+  </li><div class="col-sm-1"></div>
+
+  <li class="nav-item">
+    <a class="btn btn-dark" href="CadastroEmpresas.jsp">Cadastro de Empresas</a>
+  </li><div class="col-sm-1"></div>
+
+  <li class="nav-item">
+    <a class="btn btn-dark" href="CadastroVeiculos.jsp">Cadastro de Veículos</a>
+  </li>
+</ul>     
+</div><hr>
+
+
+
+
+

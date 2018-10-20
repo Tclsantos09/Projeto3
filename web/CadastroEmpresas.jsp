@@ -9,29 +9,16 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Cad Empresas</title>
         
-        <style>
-            body{
-                padding-bottom:100px;
-            }
-            
-            
-
-            table,th, td {
-                    border-collapse: collapse;
-                    border: 1px solid black;
-                }
-                
-            th, td {
-                text-align: center;
-            }
-
-        </style>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        
         
     </head>
     
-    <body>
-        <%@include file="WEB-INF/jspf/menu.jspf" %>
-        <h2 align="center">Cadastrar Empresas</h2>
+    <body><div class="container">
+        <h4 >Cadastrar Empresas</h4>
         
         <%
             try{
@@ -39,8 +26,13 @@
                Empresa ins = new Empresa();
                ins.setNome(request.getParameter("nome"));
                ins.setRazaoSocial(request.getParameter("razaoSocial"));
+               
+               int cnpj = Integer.parseInt(request.getParameter("cnpj"));
                ins.setCnpj(request.getParameter("cnpj"));
+               
+               int telefone = Integer.parseInt(request.getParameter("telefone"));
                ins.setTelefone(request.getParameter("telefone"));
+               
                ins.setWebsite(request.getParameter("website"));
                BD.getEmpresa().add(ins);
                response.sendRedirect(request.getRequestURI());
@@ -48,17 +40,17 @@
         %>
 
         <form>
-            <div align="center">
-                Nome:<br> <input  type="text" name="nome"/>  <br>
-                Razão Social:<br> <input  type="text" name="razaoSocial"/>  <br>
-                CNPJ<br> <input type="text" name="cnpj" placeholder="Somente números"/>  <br>
-                Telefone: <br><input  type="text" name="telefone" placeholder="Somente números"/>  <br>
+            <div >
+                Nome:<br> <input  type="text" name="nome" required="true"/>  <br>
+                Razão Social:<br> <input  type="text" name="razaoSocial" required="true"/>  <br>
+                CNPJ<br> <input type="text" name="cnpj" placeholder="Somente números"required="true"/>  <br>
+                Telefone: <br><input  type="text" name="telefone" placeholder="Somente números"required="true"/>  <br>
                 Website: <br><input  type="text" name="website"/>  <br> <br>
-                <input type="submit" name="inserir" value="inserir"/>
+                <input type="submit" name="inserir" Class="btn btn-dark" value="inserir"/>
             </div>
-        </form><br><br>
+        </form><hr>
 
-        <table border="1" style="margin: 5px" align="center">
+        <table border="1" style="margin: 5px" >
             <tr>
                 <th>Id</th>
                 <th>Nome</th>
@@ -77,22 +69,23 @@
                    <td><%=BD.getEmpresa().get(i).getTelefone()%></td>
                    <td><%=BD.getEmpresa().get(i).getWebsite()%></td>
                    <td>
-                       <a href="AlterarEmpresas.jsp?id=<%=i%>"> <button name="alterar">Alterar</button></a>
-                       <a href="ExcluirEmpresas.jsp?id=<%=i%>"> <button>Excluir</button></a>
+                       <a href="AlterarEmpresas.jsp?id=<%=i%>"> <button name="alterar" class="btn btn-primary">Alterar</button></a>
+                       <a href="ExcluirEmpresas.jsp?id=<%=i%>"> <button class="btn btn-danger">Excluir</button></a>
                    </td>
                </tr>
             <%}%>
         </table>
 
         <%}catch(Exception ex){%>
-            <b>Valores incorretos! Tente Novamente.</b><br>
+                    <h5 style="color:red"><b>Valores incorretos! Tente Novamente.</b></h5><br>
+                    <button class="btn btn-dark"><a href="CadastroEmpresas.jsp">Voltar</a></button>
         <%}%>  
+        </div>
+                    <%@include file="WEB-INF/jspf/footer.jspf" %>
 
-    </body>
+        </body>
     
-    <div class="footer">
-            <%@include file="WEB-INF/jspf/footer.jspf" %>
-    </div>
+    
 
 </html>
 
