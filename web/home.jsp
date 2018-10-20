@@ -50,7 +50,7 @@
                     <div class="card-body">
                         <h3 class="text-center card-title">Cadastro de Veículos</h3>
                         <p class="text-center card-text">Ir para a página de cadastro e gerenciamento de veículos.</p>
-                        <a class="col-sm-12 text-center btn btn-dark" href="CadastroEmpresas.jsp">Gerenciar Veículos</a>
+                        <a class="col-sm-12 text-center btn btn-dark" href="CadastroVeiculos.jsp">Gerenciar Veículos</a>
                     </div>
                 </div>                  
             </div></div>
