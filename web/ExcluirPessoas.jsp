@@ -28,7 +28,6 @@
                 %>
                 
                 <form id="<%=i%>">
-                   <form id="<%=i%>">
                    <div class="form-group col-md-5">
                     ID <input  type="text" class="form-control" name="id" value="<%= i%>">  
                     Nome <input  type="text" class="form-control" name="nome" value="<%= BD.getPessoa().get(i).getNome()%>"> 
@@ -41,7 +40,5 @@
                 </form>
         </div>         
     </body>
-    <div class="footer">
-        <%@include file="WEB-INF/jspf/footer.jspf" %>
-    </div>
+    
 </html>

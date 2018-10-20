@@ -15,17 +15,13 @@
     </head>
     
     <body><div class="container">        
-        <%
-            try{
+           <%
             if (request.getParameter("inserir")!=null){
                Empresa ins = new Empresa();
                ins.setNome(request.getParameter("nome"));
                ins.setRazaoSocial(request.getParameter("razaoSocial"));
-               
-               int cnpj = Integer.parseInt(request.getParameter("cnpj"));
                ins.setCnpj(request.getParameter("cnpj"));
                
-               int telefone = Integer.parseInt(request.getParameter("telefone"));
                ins.setTelefone(request.getParameter("telefone"));
                
                ins.setWebsite(request.getParameter("website"));
@@ -33,6 +29,19 @@
                response.sendRedirect("ListaEmpresas.jsp");
             }
         %>
+        <%
+                if (request.getParameter("inserir") != null) {
+                    String Nome = request.getParameter("nome");
+                    String RazaoSocial = request.getParameter("razaoSocial");
+                    String Cnpj = request.getParameter("cnpj");
+                    String telefone = request.getParameter("telefone");
+                    String Website = request.getParameter("website");
+                    Empresa c = new Empresa();
+                    c.setEmpresa(Nome, RazaoSocial, Cnpj, telefone, Website);
+                    BD.getEmpresa().add(c);
+                    request.getRequestDispatcher("ListaEmpresa.jsp");
+                }
+            %>
 
     <div class="row">
             <div class="col-md-5">
@@ -59,14 +68,10 @@
                     <label for="website" class="font-weight-bold">WebSite</label>
                     <input type="text" id="website" name="website" class="form-control">
                 </div> 
-                <input type="submit" name="inseir" Class="btn btn-dark" value="inserir"/>
+                <input class="btn btn-dark" type="submit" name="inserir" value="Inserir"/>
                 <a href="ListaEmpresas.jsp" class="btn btn-outline-secondary" title="Voltar para a lista de contatos.">Lista</a>
 
                 </form>
-                
-                
-                
-
             </div>
                 <div class="col-md-7">
                     <center>
@@ -76,9 +81,7 @@
             
         </div>
         </div>
-        <%}catch(Exception ex){%>
-                <h5 style="color:red"><b>Valores incorretos! Tente Novamente.</b></h5><br> 
-        <%}%>
+        
     </body>
 
                     <%@include file="WEB-INF/jspf/footer.jspf" %>

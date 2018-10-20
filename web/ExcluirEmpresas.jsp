@@ -23,23 +23,18 @@
             }
         %>
                 
-        <form id="<%=i%>">
-            <div >
-                ID<br> <input  type="text" name="id" value="<%= i%>"><br>
-                <input  type="hidden" name="i" value="<%= i%>">   
-                Nome:<br> <%= p.getNome()%><br>
-                Razão Social:<br> <%= p.getRazaoSocial()%><br>
-                CNPJ:<br> <%= p.getCnpj()%><br>
-                Telefone: <br> <%= p.getTelefone()%><br>
-                Website: <br> <%= p.getWebsite()%><br><br>
+          <form id="<%=i%>">
+                   <div class="form-group col-md-5">
+                ID <input  type="text" class="form-control" name="id" value="<%= i%>">   
+                Nome <input  type="text" class="form-control" name="nome" value="<%= p.getNome()%>">
+                Razão Social<input  type="text" class="form-control" name="nome" value=" <%= p.getRazaoSocial()%>">
+                CNPJ<input  type="text" class="form-control" name="nome" value="<%= p.getCnpj()%>">
+                Telefone<input  type="text" class="form-control" name="nome" value="<%= p.getTelefone()%>">
+                Website<input  type="text" class="form-control" name="nome" value="<%= p.getWebsite()%>"><br>
                 <button name="excluir" class="btn btn-danger">Excluir</button>
-                <button class="btn btn-dark"><a href="CadastroEmpresas.jsp" >Voltar</a></button>
+                <button name="voltar" class="btn" ><a href="ListaEmpresas.jsp" >Voltar</a></button>
             </div>
         </form>
                 </div>
     </body>
-    
-    <div class="footer">
-        <%@include file="WEB-INF/jspf/footer.jspf" %>
-    </div>
 </html>
